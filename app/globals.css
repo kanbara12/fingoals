@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Kustomisasi Warna FinGoals (Tailwind v4 Style) */
+  --color-fingoals-purple-dark: #7B3F8C;
+  --color-fingoals-purple-main: #925AA6;
+  --color-fingoals-purple-light: #B277C5;
+  --color-fingoals-purple-bg: #F9F5FB;
+
+  --color-fingoals-cream-dark: #F7E8C9;
+  --color-fingoals-cream-light: #FFF6E8;
+
+  --color-fingoals-accent: #F38BB0;
+
+  /* Kustomisasi Radius & Shadow */
+  --radius-fingoals: 20px;
+  --shadow-soft: 0 10px 25px -5px rgba(146, 90, 166, 0.1), 0 8px 10px -6px rgba(146, 90, 166, 0.1);
+} @utility animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
